@@ -1,0 +1,3 @@
+ As the title says, it's a very simple one:
+ 
+ ' OR '1'=1

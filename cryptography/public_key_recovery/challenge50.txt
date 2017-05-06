@@ -1,0 +1,9 @@
+# Public key recovery - Challenge 50
+
+Let's recover the public key:
+
+`openssl rsa -in challenge50.pem -pubout > challenge50.pub.pem`
+
+Then MD5 the base64 encoded public key (remove newlines):
+
+`echo -n -e "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDwkrxVrZ+KCl1cX27SHDI7EfgnFJZ0qTHUD6uEeSoZsiVkcu0/XOPbz1RtpK7xxpKMSnH6uDc5On1IEw3A127wW4Y3Lqqwcuhgypd3Sf/bH3z4tC25eqr5gA1sCwSaEw+yBxdnElBNOXxOQsST7aZGDyIUtmpouI1IXqxjrDx2SQIDAQAB" |md5sum`

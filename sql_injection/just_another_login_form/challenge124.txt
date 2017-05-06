@@ -1,0 +1,4 @@
+This is a classis LDAP injection, let's use these parameters to win this challenge:
+
+username: admin
+password: *
