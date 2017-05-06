@@ -1,3 +1,6 @@
+# Client side validation is bad - Challenge 27
+
+``` javascript
 // Look's like weak JavaScript auth script :)
 $(".c_submit").click(function(event) {
 	event.preventDefault()
@@ -11,9 +14,11 @@ $(".c_submit").click(function(event) {
 	    $("#cresponse").html("<div class='alert alert-danger'>Wrong password sorry.</div>");
 	}
 });
+```
 
+Just convert ASCII decimal values to characters
 
-Convert ASCII decimal values to characters
-
-for i in [74,97,118,97,83,99,114,105,112,116,73,115,83,101,99,117,114,101]:
-	print(chr(i), end='')
+``` python
+a = [74,97,118,97,83,99,114,105,112,116,73,115,83,101,99,117,114,101]
+print(''.join(chr(i) for i in a))
+```
