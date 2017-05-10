@@ -1,4 +1,4 @@
-# 802.1 part 1 - Challenge 192
+# 802.1x part 1 - Challenge 192
 
 The goal here is to find the RADIUS shared secret.
 
